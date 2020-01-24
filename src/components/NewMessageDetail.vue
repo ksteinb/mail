@@ -261,6 +261,7 @@ export default {
 			})
 		},
 		sendMessage(data) {
+			data.body = '<style>p{margin:0;}</style>' + data.body
 			return sendMessage(data.account, data)
 		},
 	},
